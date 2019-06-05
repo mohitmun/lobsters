@@ -39,7 +39,7 @@ module ApplicationHelper
 
     @header_links = {
       root_path => { :title => @cur_url == "/" ? Rails.application.name : "Home" },
-      recent_path => { :title => "Recent PR 4" },
+      recent_path => { :title => "Recent PR 5" },
       comments_path => { :title => "Comments" },
     }
 

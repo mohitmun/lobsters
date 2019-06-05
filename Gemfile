@@ -4,6 +4,7 @@ gem "rails", "~> 5.2.0"
 
 gem "mysql2"
 
+gem "faker"
 # uncomment to use PostgreSQL
 # gem "pg"
 
@@ -52,7 +53,6 @@ group :test, :development do
   gem "rubocop", require: false
   gem "rubocop-rspec", require: false
   gem "sqlite3"
-  gem "faker"
   gem "byebug"
   gem "rb-readline"
 end

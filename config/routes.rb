@@ -193,5 +193,7 @@ Rails.application.routes.draw do
 
   get "/privacy" => "home#privacy"
   get "/about" => "home#about"
+  get "/benchmark" => "home#benchmark"
+  post "/benchmark" => "home#benchmark"
   get "/chat" => "home#chat"
 end

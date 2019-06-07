@@ -1,0 +1,23 @@
+default: &default
+  adapter: mysql2
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+development:
+  <<: *default
+  database: lobsters_dev
+  username: root
+  host: localhost
+
+
+  #host: 0.0.0.0
+  #port: <%= ENV['MYSQL_PORT'] || 0000 %>
+
+  #password: YOURNEWPASSWORD
+
+production:
+  <<: *default
+  database: lobsters_prod
+  username: ruby-getting-started
+  password: <%= ENV['RUBY-GETTING-STARTED_DATABASE_PASSWORD'] %>
+

